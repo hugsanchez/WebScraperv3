@@ -4,7 +4,7 @@ import path from 'path'
 const csvjson = require('csvjson');
 const prisma = new PrismaClient()
 
-const linesToJson = fs.readFileSync(path.join(__dirname, 'RolfsLines_edTestData.csv'),{
+const linesToJson = fs.readFileSync(path.join(__dirname, '../../../RolfsLines_edTestData.csv'),{
   encoding: 'utf-8'
 });
 let csvdata = csvjson.toObject(linesToJson);
@@ -42,3 +42,5 @@ main()
     await prisma.$disconnect()
     process.exit(1)
   })
+
+  export default prisma;
