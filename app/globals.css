@@ -3,6 +3,8 @@ body{
   background: #e6ecf0;
   font-family: 'Asap', sans-serif;
   font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 img {
@@ -88,4 +90,29 @@ img {
     display: flex;
     margin-left: 10px;
   }
+}
+
+.button {
+  --background-color: #2bb536;
+  --background-color-dark: #134e24;
+
+  display: inline-block;
+  margin: 0 8px;
+  padding: 10px 16px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  font-size: 24px;
+  color:  black;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--background-color);
+  box-shadow: 6px 6px 0 var(--background-color-dark);
+
+}
+
+.button:active {
+  transform: translateX(2px) translateY(2px);
+  box-shadow: 4px 4px 0 var(--background-color-dark);
 }
