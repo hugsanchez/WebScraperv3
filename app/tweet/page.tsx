@@ -13,7 +13,7 @@ const Tweet = ({children}:any) => {
           <img src="https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/2/21/Rolf.jpg" 
                className="avator"></img>
           <div className="tweet-header-info">
-            Rolf Farm <span>@RolfPhilosophy</span><span>. Mar 16</span>
+            Rolf<span>@SonOfAShepardR</span><span>. Mar 16</span>
             <p>{content}</p>
           </div>
         </div>
